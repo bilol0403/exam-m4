@@ -56,9 +56,10 @@
 }
 
 .wrapper{
+    
     padding-left: 10px;
     margin-top: 40px;
-    gap:20px;
+   
     background :#fff;
     border-radius: 10px;
 }
@@ -67,7 +68,4 @@ ul{
 }
 .list{
     padding-left: 0;
-}
-p{
-    padding-bottom: 15px;
 }

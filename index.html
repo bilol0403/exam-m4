@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>exam</title>
 </head>
+
 <body>
-    <div class=" d-flex containers">
+    <form class="d-none form__post">
+        <input class="post__name" type="text" placeholder="Enter a name">
+        <input type="number" placeholder="Enter a number">
+        <input type="number" placeholder="Enter a date">
+        <input type="text" placeholder="Enter a username">
+        <input type="text" placeholder="Enter a city">
+        <input type="text" placeholder="Enter a phone number">
+        <button class="btn__submit">submit</button>
+    </form>
+    <div class="div__main d-flex containers">
         <header>
             <nav class="header__nav ">
                 <div class="d-flex div">
-                    <img  src="./images/akademi.svg" alt="akademy">
+                    <img src="./images/akademi.svg" alt="akademy">
                     <h1 class="text-light">Akademi</h1>
                 </div>
                 <ul class="d-flex flex-column ">
@@ -59,52 +70,28 @@
                 <p class="nav__text pb-4">Made with ♥ by Peterdraw</p>
             </nav>
         </header>
-        <main class="main">
+        <main class="main w-75">
             <section>
                 <div class="header__left">
                     <h2>Students</h2>
-                    <button id="logout" class="btn">Log Out</button>
+                    <button id="logout" class="btn ">Log Out</button>
                 </div>
-                <form  class="d-flex form justify-content-between mt-4">
+                <form class="d-flex form justify-content-between mt-4">
                     <input name="search" class="input" type="text" placeholder="Search here... ">
-                    <button class="btn">New student</button>
+                    <button class="btn btn__post">+New student</button>
                 </form>
-                <div class="wrapper d-flex">
-                    <div class="name">
-                        <p>Name</p>
-                        <ul id="name" class="list"></ul>
-                    </div>
-                    <div>
-                        <p>ID</p>
-                        <ul id="id" class="text-info list"></ul>
-                    </div>
-                    <div>
-                        <p>Date</p>
-                        <ul id="date" class="list"></ul>
-                    </div>
-                    <div>
-                        <p>Parent Name</p>
-                        <ul id="parent" class="list"></ul>
-                    </div>
-                    <div>
-                        <p>City</p>
-                        <ul id="city" class="list"></ul>
-                    </div>
-                    <div>
-                        <p>Contact</p>
-                        <ul id="contact" class="list">
-                            <a href=""><img src="./images/Call.png" alt=""></a>
-                        </ul>
-                    </div>
-                    <div>
-                        <p>Grade</p>
-                        <ul id="grade" class="list"></ul>
-                    </div>
-                    <div>
-                        <p>Action</p>
-                        <ul id="action" class="list"></ul>
-                    </div>
-                </div>
+                <ul class="wrapper" id="wrapper">
+                    <li style="display: flex; justify-content: space-between;">
+                        <p >Name</p>
+                        <p >ID</p>
+                        <p >Zip Code</p>
+                        <p >Username</p>
+                        <p >City</p>
+                        <p >Phone</p>
+                        <p >Action</p>
+                    </li>
+
+                </ul>
             </section>
         </main>
     </div>
@@ -112,4 +99,5 @@
 
     <script src="./script.js"></script>
 </body>
+
 </html>
